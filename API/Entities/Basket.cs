@@ -4,7 +4,9 @@ namespace API.Entities
     {
         public int Id {get; set; }
         public string BuyerId { get; set; }
-        public List<BasketItem> Items {get; set; } = new();  
+        public List<BasketItem> Items {get; set; } = new();
+        public string PaymentIntentId {get; set; }
+    public string ClientSecret {get; set; }  
 
         public void AddItem(Product product, int quantity)
         {
